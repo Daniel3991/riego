@@ -1,0 +1,24 @@
+<ActionBar title="Usuarios">
+</ActionBar>
+
+<GridLayoud>
+    <ListView [item]="Usuarios">
+        <ng-template let-item="user">
+            <StackLayout>
+                <label [text]="usuario.nombre"></label>
+                <label [text]="usuario.telefono"></label>
+                <label [text]="usuario.correo"></label>
+                <label [text]="usuario.anuncio"></label>
+            </StackLayout>
+        </ng-template> 
+    </ListView>
+    <Button text="salir" (tap)="salir()" class="btn btn-primary"></Button>
+</GridLayoud>
+
+
+
+
+
+
+
+<Button text="salir" (tap)="salir()" class="btn btn-primary"></Button>
