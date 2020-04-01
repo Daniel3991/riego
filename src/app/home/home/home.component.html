@@ -1,6 +1,11 @@
 <ActionBar title="Usuarios">
+    <ActionItem
+    android.systemIcon="ic_menu_back" 
+    ios.position="right"
+    android.position="right"
+    (tap) ="salir()" text="Salir">
+    </ActionItem>
 </ActionBar>
-
 <GridLayoud>
     <ListView [item]="Usuarios">
         <ng-template let-item="user">

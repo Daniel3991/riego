@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterExtensions } from "nativescript-angular/router";
 import { User }from "../../model/user";
 import { UserService }from "../../shared/user.service";
+import { clear } from "tns-core-modules/application-settings";
 
 @Component({
   selector: 'ns-home',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
 salir(){
+  clear();
   this.routerExtension.navigate(["/login"],{clearHistory:true});
 }
 
