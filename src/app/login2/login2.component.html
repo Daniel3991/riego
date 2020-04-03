@@ -14,6 +14,7 @@
                     [(ngModel)]="user.password">
                 </TextField>
             </StackLayout>
+            g
             <ActivityIndicator rowspan="2" [busy]="isBusy" color="#365a95" width="100" height="100" (busyChange)="onBusyChanged($event)"></ActivityIndicator>
         </GridLayout>
         <Button [isEnabled]="!isBusy" text="ingresar " (tap)="ingresar()" class="btn btn-primary"></Button>

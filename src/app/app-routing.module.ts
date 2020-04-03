@@ -11,7 +11,8 @@ const routes: Routes = [
     { path: "", redirectTo: "/login", pathMatch: "full" },
     { path: "login", component: Login2Component },
     { path: "item/:id", component: ItemDetailComponent },
-    { path: "home", loadChildren:"./home/home.module#HomeModule" }
+    { path: "home", loadChildren:"./home/home.module#HomeModule"},
+    { path: "camara", loadChildren:"./camara/camara.module#CamaraModule"}
     
 ];
 

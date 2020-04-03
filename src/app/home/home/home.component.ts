@@ -28,5 +28,14 @@ salir(){
 }
 
 
+
+actCamara(){
+  this.routerExtension.navigate(["/camara"]);
+}
+
+
+
+
+
 }
 

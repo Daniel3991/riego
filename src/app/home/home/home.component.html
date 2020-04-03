@@ -1,11 +1,17 @@
 <ActionBar title="Usuarios">
-    <ActionItem
+    <NavigationButton 
+    text="Go Back" 
     android.systemIcon="ic_menu_back" 
-    ios.position="right"
-    android.position="right"
-    (tap) ="salir()" text="Salir">
-    </ActionItem>
+    (tap) ="salir()">
+</NavigationButton>      
+    <ActionItem  
+        android.systemIcon="ic_menu_camera"      
+        ios.position="right"   
+        android.position="right"     
+        (tap) ="actCamara()" text="camara">  
+   </ActionItem>
 </ActionBar>
+
 <GridLayoud>
     <ListView [item]="Usuarios">
         <ng-template let-item="user">
@@ -17,11 +23,12 @@
             </StackLayout>
         </ng-template> 
     </ListView>
-    <Button text="salir" (tap)="salir()" class="btn btn-primary"></Button>
+  
 </GridLayoud>
 
 
 
+<Button text="salir" (tap)="salir()" class="btn btn-primary"></Button>
 
 
 
